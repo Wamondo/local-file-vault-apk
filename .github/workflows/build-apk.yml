@@ -16,7 +16,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: "npm"
 
       - name: Setup Java 17
         uses: actions/setup-java@v4
@@ -26,7 +25,7 @@ jobs:
 
       - name: Install dependencies and build bundle
         run: |
-          npm ci
+          npm install
           npx rollup -c
           npx cap sync android
 
