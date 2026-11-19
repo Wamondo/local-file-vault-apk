@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local File Vault</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 20px auto; padding: 0 14px; background: #f5f7fa; color: #222; }
+    .card { background: #fff; padding: 16px; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); margin-bottom: 16px; }
+    button { padding: 8px 12px; border-radius: 6px; border: none; background: #1a73e8; color: #fff; cursor: pointer; font-size: 14px; }
+    button.del { background: #d93025; padding: 5px 9px; font-size: 12px; }
+    ul { list-style: none; padding: 0; margin: 0; }
+    li { display: flex; justify-content: space-between; align-items: center; padding: 10px 4px; border-bottom: 1px solid #eee; gap: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Local File Vault</h2>
+  <div class="card">
+    <input type="file" id="fileInput">
+    <button id="saveBtn" style="margin-top: 10px;">Save File Locally</button>
+  </div>
+  <div class="card">
+    <h3>Stored Files</h3>
+    <ul id="fileList"><li>Loading...</li></ul>
+  </div>
+  <script src="./bundle.js"></script>
+</body>
+</html>
